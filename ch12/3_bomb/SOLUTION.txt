@@ -1,0 +1,13 @@
+Analyzing the code with ida64 you can notice that there is 6 phases.
+
+The first phase you have to insert the string : 
+Border relations with Canada have never been better.
+
+In the second phase compare 6 numbers. the first one is 1 and than you sum the prewious number 2 times so you have to insert : 
+1 2 4 8 16 32
+
+In the third phase you can see a switch statement: you have to insert two numbers: the first number has the be tha case of the switch you want to use, the second number has to be the number that the selected case setted. So the case 0 set the number 207: 
+0 207
+
+In the forth phase you have to insert two numbers. The first one has to be less than 14 so i bruteforced it. The second number has to be 0 so:
+0 0

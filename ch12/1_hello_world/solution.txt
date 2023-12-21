@@ -1,0 +1,12 @@
+First i opened the hellow_world file with ida64 and i saw the assembly
+code of the main section of the program. Analizing the code i noticed
+that the 4 alpha numeric code is checked by comparing char by char
+and if a char resoult wrong it will return the error.
+So i was able to read the chars i have to insert in the program and
+tha flag appeared.
+
+In alternative..
+
+I was able to see the function that is called if the alpha numeric
+code is right and ispecting the function you can see the flag that
+will be printed.

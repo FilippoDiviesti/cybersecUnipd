@@ -1,0 +1,1 @@
+Analysing the program with ida64 you can see that at the top of the program, before calling the Welcome function it creates the variables John Galt for the username. Then in the password check section you can see both comment and variable of the password and if you type them in the program you can see John's mails and in it there is the flag.
