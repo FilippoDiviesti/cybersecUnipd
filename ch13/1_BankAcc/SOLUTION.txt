@@ -1,0 +1,1 @@
+First i analyzed the code with ida64 and i noticed that there isa an if that chack your pin wita another one generated randomly. So you can know the pin. Then i used radare2 and i overwrited two bytes instead of the if statement. Then I restarted the program and now whatever pin i insert in the program it will return me my bank account.

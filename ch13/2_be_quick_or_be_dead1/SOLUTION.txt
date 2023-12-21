@@ -1,0 +1,1 @@
+Analyzing the code with ida64 i can see that there is a timer function that set a timer and at the end the program will stop. So with radare2 i overwrited the call of the function with 5 nop so the modified program now will calculate the key and it will give me the flag.
