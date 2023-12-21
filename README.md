@@ -10,7 +10,7 @@ Ida64 + Radare2 - Reverse Patching
 Ida64 + Radare2 + GDB - Reverse Debug
 
 ## ch15 ###
-Ida64 + PWN PyLib - PWN Intro
+Ida64 + GDB + PWN PyLib - PWN Intro
 
 ## ch16 ###
-Ida64 + PWN PyLib - PWN Shellcode
+Ida64 + GDB + PWN PyLib - PWN Shellcode
