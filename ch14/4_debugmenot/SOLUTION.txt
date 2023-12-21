@@ -1,0 +1,3 @@
+Analyzing the code you can see that there is three if statements and in the last one
+there is the code of the passed check so i used radare2 to modify the first if statement, witch is a je assembly statement to a jmp assembly statement and jump in the memory address of
+the pass check. So every time it will print PASS
