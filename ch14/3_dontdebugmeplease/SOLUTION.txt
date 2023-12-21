@@ -1,0 +1,18 @@
+SOLUTION 1 (ida64):
+
+If you analize the code with ida you can see the flag in plain text.
+
+SOLUTION 2 (gdb):
+
+With gdb i insert a breakpoint before the string compare and than i run the program and i insered a string of at least 7 chars. With the 'p' command in gdb i displayed the %rsi register in witch there is the flag in plain text
+
+gdb dontdebugmeplease
+layout asm
+b *main+102
+r
+//inserisco una stringa a caso di almeno 7 caratteri
+p (char*)$rsi
+
+
+
+SPRITZ{d38U99in9_iS_v3ry_4nn0yIn9.}

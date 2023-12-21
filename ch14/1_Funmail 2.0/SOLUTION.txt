@@ -1,0 +1,34 @@
+SOLUZIONE 1 (RADARE2) :
+
+First i analized the code with ida64 and i noticed that in the program also if you insert the correct username (john galt) and password (more-secure-password) you will never get the flag printed.
+So using radare2, next to the function witch call the printWelcome function i insered a jmp command witch jump to the adress of the printFlag function.
+Now if you run the program you will get the function printed.
+
+r2 -w funmail2.02
+aaaa
+s main
+pdf
+//look for the address to modify with ida64 and i save it
+s printFlag
+pdf
+//look for printFlag address with ida64 and i save it
+s <address to modify>
+"wai jmp <printFlag address>"
+s main
+pdf
+//check new jmp command
+//quit radare2 and run the program
+
+TUCTF{l0c4l_<_r3m073_3x3cu710n}
+
+
+SOLUZIUONE 2 (GDB) :
+
+First i analized the code with ida64 and i noticed that in the program also if you insert the correct username (john galt) and password (more-secure-password) you will never get the flag printed. So i run the program using gdb and first i added a breakpoint at main+169 address before reading the user input then i run the program and it stopped at that point. Then i use jmp printFlag command and i got the flag.
+
+gdb funmail
+disass main
+layout asm
+b *main+169
+r
+jump printFlag

@@ -1,0 +1,12 @@
+First i run the program and i saw that it decrypt the flag and save it into a global variable.
+So i used gdb to instert a breakpoint after the decryption and using the command p and casting it to a char sequence i get the flag.
+
+gdb run
+[ctrl+x a] //tengo premuto ctrl e premo in sequenza x e poi a
+b *main+70
+r
+p (char*)flag_buf
+[ctrl+x a]
+
+
+picoCTF{gDb_iS_sUp3r_u53fuL_f3f39814}
