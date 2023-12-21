@@ -1,2 +1,5 @@
-Analyzing the code with ida64 you can see that it creates a txt file in tmp/flag.txt and write inside it something and then remove the file. So first of all i edited the program by removing
-the remove function witch delete de file. Then inside the for witch writes into the file you can see that after a char write the for writes the string made of '*' and if you remove also that line with radare2 you will get the flag inside the flag.txt file.
+Analyzing the code with ida64 you can see that it creates a txt file in tmp/flag.txt 
+and write inside it something and then remove the file. So first of all i edited the program by removing
+the remove function witch delete de file. Then inside the for witch writes into the file you can see that 
+after a char write the for writes the string made of '*' and if you remove also that line with radare2 
+you will get the flag inside the flag.txt file.
